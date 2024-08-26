@@ -1,7 +1,7 @@
 from getpass import getpass
 
-client_id=getpass("Application/client id: ")#a4561365-c10c-4bfb-8023-7ba0585d23e8
-client_secret=getpass("client secret: ")#gWx8Q~5_ocKN9ocKeoFm_wBJfCQM7eUXT7khlcPn
+client_id=getpass("Application/client id: ")#
+client_secret=getpass("client secret: ")#
 
 
 
@@ -16,8 +16,8 @@ import xml.etree.ElementTree as ET
 
 def get_new_token():
     #GRAPH REST API AUTHENTICATION https://learn.microsoft.com/en-us/graph/auth-v2-service
-    tenant = "98e9ba89-e1a1-4e38-9007-8bdabc25de1d"
-    auth_server_url ="https://login.microsoftonline.com/98e9ba89-e1a1-4e38-9007-8bdabc25de1d/oauth2/v2.0/token"
+    tenant = "tenantid"
+    auth_server_url ="https://login.microsoftonline.com/tenantid/oauth2/v2.0/token"
     resource_app_uri = "https://storage.azure.com"
         
     headers = {"Content-Type":"application/x-www-form-urlencoded"}
